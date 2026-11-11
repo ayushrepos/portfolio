@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ayushrepos.pages.dev/sitemap.xml

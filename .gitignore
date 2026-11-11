@@ -1,0 +1,13 @@
+# QA artifacts and local tooling
+qa/
+node_modules/
+*.log
+
+# OS clutter
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Local environment
+.env
+.env.*
