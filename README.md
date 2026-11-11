@@ -68,6 +68,7 @@ The design uses a warm red-and-yellow palette with a crowned pixel-art chicken a
 ├── googleb57ade3d80d6a628.html # Google Search Console verification file
 ├── functions/
 │   └── _middleware.js          # Exact-path 200 response for the verification file
+├── _routes.json                # Runs the function only for the verification path
 ├── assets/
 │   ├── logo.png / logo.webp    # Hero brand artwork
 │   ├── mark.png / mark.webp    # Navbar mark
