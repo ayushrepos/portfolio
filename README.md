@@ -62,6 +62,7 @@ The design uses a warm red-and-yellow palette with a crowned pixel-art chicken a
 ├── index.html                  # Page markup, metadata and JSON-LD
 ├── styles.css                  # Theme system and responsive layout
 ├── script.js                   # Theme, menu, dialog, FAQ, search, toast, form
+├── 404.html                    # Branded not-found page (served with a real 404)
 ├── _headers                    # Cloudflare Pages cache and security headers
 ├── robots.txt                  # Crawler rules and sitemap reference
 ├── sitemap.xml                 # Single-page sitemap
