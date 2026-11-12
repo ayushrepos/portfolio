@@ -64,10 +64,9 @@
   --toast-bg: #2f241e;
   --toast-fg: #fff6ea;
   --toast-action: #f3cf74;
-  --avail-bg: #2f241e;
-  --avail-fg: #fff6ea;
-  --avail-dot: #ffc72c;
-  --avail-border: transparent;
+  --avail-bg: #fff6e4;
+  --avail-fg: #2b160e;
+  --avail-border: #ecdfc4;
   --backtop-bg: #f0cf6d;
   --backtop-fg: #2f241e;
   --progress: #a9241c;
@@ -118,10 +117,9 @@ html[data-theme="dark"] {
   --toast-bg: #34241d;
   --toast-fg: #f4e8da;
   --toast-action: #e7c675;
-  --avail-bg: #34241d;
-  --avail-fg: #f4e8da;
-  --avail-dot: #e7c675;
-  --avail-border: #4d362b;
+  --avail-bg: #fff3dc;
+  --avail-fg: #2b160e;
+  --avail-border: #e2d3b6;
   --backtop-bg: #e2c06b;
   --backtop-fg: #2a1d12;
   --progress: #c15c52;
@@ -564,21 +562,11 @@ p {
   white-space: nowrap;
 }
 
-.tag-dot {
-  display: inline-block;
-  width: 8px;
-  height: 8px;
-  flex: 0 0 8px;
-  border-radius: 50%;
-  background: var(--brand-red);
-}
-
-/* Availability badge — dark pill, dot optically centred with the text */
+/* Availability badge — milky cream pill */
 .tag-available,
 .about-card .available-text {
   display: inline-flex;
   align-items: center;
-  gap: 8px;
   width: fit-content;
   border: 1px solid var(--avail-border);
   border-radius: 999px;
@@ -588,17 +576,11 @@ p {
 
 .tag-list .tag-available {
   height: 32px;
-  padding: 0 15px;
+  padding: 0 16px;
   border: 1px solid var(--avail-border);
   border-radius: 999px;
   color: var(--avail-fg);
   font-weight: 500;
-}
-
-.tag-available .tag-dot,
-.about-card .available-text .tag-dot {
-  background: var(--avail-dot);
-  transform: translateY(1px);
 }
 
 .tag-row {
@@ -1232,7 +1214,7 @@ p {
 
 .about-card .available-text {
   margin-top: 10px;
-  padding: 9px 17px;
+  padding: 10px 18px;
   font-size: 1.1875rem;
   font-weight: 600;
   line-height: 1;
