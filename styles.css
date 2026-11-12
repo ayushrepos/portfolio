@@ -1351,6 +1351,8 @@ p {
 .stack-head .icon-bubble {
   width: 36px;
   height: 36px;
+  background: transparent;
+  border: 1px solid var(--outline-variant);
 }
 
 .stack-head .icon-bubble .icon {
