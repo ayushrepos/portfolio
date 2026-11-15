@@ -1,5 +1,5 @@
 {
   "version": 1,
-  "include": ["/googleb57ade3d80d6a628.html"],
+  "include": ["/googleb57ade3d80d6a628.html", "/.well-known/discord"],
   "exclude": []
 }

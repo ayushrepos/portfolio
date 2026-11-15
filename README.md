@@ -67,9 +67,11 @@ The design uses a warm red-and-yellow palette with a crowned pixel-art chicken a
 ├── robots.txt                  # Crawler rules and sitemap reference
 ├── sitemap.xml                 # Single-page sitemap
 ├── googleb57ade3d80d6a628.html # Google Search Console verification file
+├── .well-known/
+│   └── discord                 # Discord domain verification file
 ├── functions/
-│   └── _middleware.js          # Exact-path 200 response for the verification file
-├── _routes.json                # Runs the function only for the verification path
+│   └── _middleware.js          # Exact-path 200 responses for verification files
+├── _routes.json                # Runs the function only for the verification paths
 ├── assets/
 │   ├── logo.png / logo.webp    # Hero brand artwork
 │   ├── mark.png / mark.webp    # Navbar mark
@@ -114,6 +116,8 @@ The site is intentionally lightweight:
 - `robots.txt` with sitemap reference.
 - `sitemap.xml` ready for search-engine submission.
 - Google Search Console verification file served with an exact-path `200` response, bypassing Cloudflare Pages' automatic `.html` → extensionless `308` redirect.
+- Discord domain verification file served at `/.well-known/discord` with the exact `dh=` body.
+- Pinterest domain verification via the `p:domain_verify` meta tag.
 - `lang="en-IN"` and structured location, education and language data.
 
 > If the site moves to a different domain, update the canonical, Open Graph/Twitter URLs, JSON-LD IDs, `robots.txt` and `sitemap.xml`.
